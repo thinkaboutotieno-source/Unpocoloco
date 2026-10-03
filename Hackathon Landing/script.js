@@ -5,13 +5,13 @@
   // Replace checkCredentials() with a call to your server for real use.
   var STAFF_ID_PATTERN = /^[A-Z]{3}\d{4}$/;   // e.g. NRB1234
   var DEMO_PASSWORD = '1234';
-  var HOME_PAGE = 'dashboard.html';           // page to open after login
+  var HOME_PAGE = 'hackathon_v4-main/index.html';         // page to open after login
 
   var form = document.getElementById('login-form');
   var idInput = document.getElementById('employeeId');
   var pwInput = document.getElementById('password');
   var errorBox = document.getElementById('error');
-  var HOME_PAGE = 'hackathon_v4-main/index.html';
+  
 
 
 
