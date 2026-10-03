@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PRS Quick View</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><div class="wrap"><h1>PRS Quick View</h1><p>Your daily productivity at a glance</p></div></header>
+<main class="wrap">
+  <section class="card" id="source">
+    <span id="srcStatus">No data loaded.</span>
+    <span class="btns"><button id="btnGoogle" class="ghost">Connect Google Sheet</button>
+    <button id="btnRefresh" class="ghost" hidden>Refresh data</button>
+    <button id="btnSignOut" class="ghost" hidden>Disconnect</button>
+    <label class="ghost btn">Load XLSX (demo)<input type="file" id="fileIn" accept=".xlsx" hidden></label></span>
+    <div id="srcList" hidden></div>
+  </section>
+  <section class="card search">
+    <label>Employee<input id="emp" list="empList" placeholder="Type a name or ID" autocomplete="off"></label>
+    <datalist id="empList"></datalist>
+    <label>Date<input id="date" type="date"></label>
+    <button id="find" disabled>Find My Data</button>
+    <button id="all" class="second" disabled>Show all days</button>
+    <div id="hint" class="muted"></div>
+  </section>
+  <div id="out" aria-live="polite"></div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://accounts.google.com/gsi/client" async></script>
+<script src="config.js"></script><script src="core.js"></script><script src="app.js"></script>
+</body></html>

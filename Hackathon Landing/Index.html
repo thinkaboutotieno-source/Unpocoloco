@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DDD Productivity Report System - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page">
+    <header id="header">
+      <div id="logo">
+        <svg viewBox="0 0 380 88" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DDD logo">
+          <g fill="none" stroke="#213a6e" stroke-width="15">
+            <path d="M95 8 H105 A38 38 0 0 1 105 80 H95 Z" transform="translate(-0,0)"/>
+            <path d="M178 8 H188 A38 38 0 0 1 188 80 H178 Z"/>
+            <path d="M261 8 H271 A38 38 0 0 1 271 80 H261 Z"/>
+          </g>
+          <path d="M2 74 Q190 6 378 74 Q190 22 2 74 Z" fill="#b22a30"/>
+        </svg>
+      </div>
+      <h1>DDD Productivity Report System</h1>
+    </header>
+
+    <nav id="nav"><span>&raquo; Login</span></nav>
+
+    <main id="content">
+      <div id="login-box">
+        <h2>Welcome To DDD Productivity Reporting System</h2>
+        <p class="intro">Please fill out the following form with your login credentials:</p>
+        <p class="note">Fields with <span class="req">*</span> are required.</p>
+
+        <form id="login-form" novalidate>
+          <div id="error" class="error" role="alert" hidden></div>
+          <div class="row">
+            <label for="employeeId">Employee ID <span class="req">*</span></label>
+            <input type="text" id="employeeId" name="employeeId" autocomplete="username">
+          </div>
+          <div class="row">
+            <label for="password">password <span class="req">*</span></label>
+            <input type="password" id="password" name="password" autocomplete="current-password">
+          </div>
+          <div class="row buttons">
+             <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer id="footer">
+      Productivity Reporting System<br>
+      Copyright &copy; 2026 by Digital Divide Data.<br>
+      All Rights Reserved.
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
